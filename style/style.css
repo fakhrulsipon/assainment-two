@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+  .raleway-font {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  /* shared style */
+  body{
+    max-width: 1440px;
+    margin: 0px auto;
+  }
+   /* nav style */
+
+   nav{
+    max-width: 1160px;
+    margin: 0px auto;
+display: flex;
+justify-content: space-between;
+height: 62px;
+   }
+   .school{
+    display: flex;
+    gap: 11px;
+   }
+   .school >img{
+width: 62px;
+height: 62px;
+   }
+   ul{
+    list-style: none;
+    display: flex;
+    gap: 32px;
+   }
+   .nav-1{
+font-size: 1.25rem;
+font-weight: bold;
+color: orange;
+   }
+   .nav-2{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: skyblue;
+   }
+   .nav-3{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #05D4DF;
+
+   }
+   .nav-4{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #5D58EF;
+   }
+   .nav-btn{
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    background-color: orange;
+    padding: 10px 60px;
+    border-radius: 12px;
+    border: none;
+   }
+   .menu{
+    display: none;
+   }
+
+   /* banner style */
+   .banner{
+max-width: 1158px;
+margin: 0px auto;
+display: flex;
+gap: 50px;
+   }
+   .banner-contant{
+    width: 640px;
+   }
+   .banner-title{
+    font-size: 3.5rem;
+    font-weight: bold;
+   }
+   .banner-pera{
+    font-size: 1.25rem;
+    font-weight: 400;
+   }
+   .banner-btn{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: black;
+    padding: 10px 47px;
+    border-radius: 12px;
+   }
+   .banner >img{
+    width: 100%;
+   }
+
+
+
+
+
+   /* media querey style */
+
+   @media screen and (max-width: 576px) {
+    ul, .nav-head, .nav-btn{
+      display: none;
+    }
+    .menu{
+      display: block;
+
+    }
+    .banner{
+      flex-direction: column-reverse;
+    }
+    .banner-contant{
+      width: 100%;
+      text-align: center;
+      
+    }
+    .banner >img{
+      width: 100%;
+     }
+  
+   }
